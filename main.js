@@ -1,12 +1,11 @@
-
-function link(e) {
-    let link
-    if(e==='one') {
-        link = "https://mr-mystery-13.github.io/hosting-demo/";
-        return link
+function link(num) {
+    let iframe
+    if(num==='one') {
+        iframe = document.getElementById('iframe')	
+        iframe.setAttribute('src', 'https://mr-mystery-13.github.io/hosting-demo/')
     }
-    if(e==="two") {
-        link = "https://stackoverflow.com/questions/15455289/changing-variable-by-html-button"
-        return link
+    if(num==='two') {
+        iframe = document.getElementById('iframe')	
+        iframe.setAttribute('src', 'https://mr-mystery-13.github.io/Personal-Website/')
     }
 }
