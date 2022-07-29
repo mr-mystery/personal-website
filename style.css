@@ -87,15 +87,11 @@
     align-items: center;
     border: 1px solid black;
     margin-top: 10px;
-    justify-content: center:
+    justify-content: center;
 }
 
 #PJtext {
     margin: 5%;
-}
-
-iframe {
-    width: 43em;
 }
 
 #pj button {
