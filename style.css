@@ -38,7 +38,7 @@
 }
 
 #me img {
-    width: 30%;
+    width: 15em;
     margin: 3%;
 }
 
@@ -85,13 +85,17 @@
 #pj{
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border: 1px solid black;
     margin-top: 10px;
+    justify-content: center:
 }
 
 #PJtext {
     margin: 5%;
+}
+
+iframe {
+    width: 43em;
 }
 
 #pj button {
