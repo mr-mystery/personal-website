@@ -1,3 +1,4 @@
+
 /* NAV BAR STUFF */
 
 #nav{
@@ -38,6 +39,7 @@
 
 #me img {
     width: 30%;
+    margin: 3%;
 }
 
 #me img:hover {
@@ -57,29 +59,33 @@
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
 
 /* EDU STUFF */
 
 #edu {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 1px solid black;
     margin-top: 10px;
-}
-
-#edu img {
-    width: 30%;
 }
 
 #eduText {
     margin: 5%;
 }
 
+#edu img {
+    width: 30%;
+    margin:3%
+}
+
 /* PJ STUFF */
+
 #pj{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     border: 1px solid black;
     margin-top: 10px;
 }
@@ -88,3 +94,24 @@
     margin: 5%;
 }
 
+#pj button {
+    font-family: Helvetica;
+    color: black;
+    font-size: 15px;
+    padding: 1px;
+}
+
+/* FOOTER STUFF */
+
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+#footer img {
+    width: 30%;
+    height: 100px;
+}
