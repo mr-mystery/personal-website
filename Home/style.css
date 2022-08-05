@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     border: 1px solid black;
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 
 #meText {
@@ -99,6 +99,11 @@
     color: black;
     font-size: 15px;
     padding: 1px;
+}
+
+iframe {
+    width: 70vw;
+
 }
 
 /* FOOTER STUFF */
