@@ -1,3 +1,7 @@
+div {
+    border-radius: 25px;
+}
+
 /* NAV STUFF */
 
 #nav {
@@ -42,7 +46,7 @@
 }
 
 .gallery img {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
