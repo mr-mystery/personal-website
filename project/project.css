@@ -20,9 +20,27 @@ div {
     color: white;
     font-size: 32px;
     padding: 5px;
+    border-radius: 15px;
 }
 
 #nav.items:hover {
+    background-color: gray;
+    opacity: 0.5;
+}
+
+/* PJ BUTTONS */
+
+.e button {
+    font-family: Helvetica;
+    font-size: 20px;
+    padding: 3px;
+    width: 175px;
+    background-color: #272D33;
+    color: white;
+    border-radius: 15px;
+}
+
+.e button:hover {
     background-color: gray;
     opacity: 0.5;
 }

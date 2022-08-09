@@ -25,6 +25,7 @@ footer {
     color: white;
     font-size: 32px;
     padding: 5px;
+    border-radius: 15px;
 }
 
 #nav .items:hover {
@@ -69,6 +70,17 @@ footer {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+label {
+    font-size: 3vw;
+    font-weight: 1000;
+}
+
+#my-box:checked + label {
+    color: red;
+}
+
+#my-box {display: none;}
+
 /* EDU STUFF */
 
 #edu {
@@ -99,19 +111,26 @@ footer {
 }
 
 #PJtext {
-    margin: 5%;
+    margin: 2.5%;
 }
 
 #pj button {
     font-family: Helvetica;
-    color: black;
-    font-size: 15px;
-    padding: 1px;
+    font-size: 20px;
+    padding: 3px;
+    width: 175px;
+    background-color: #272D33;
+    color: white;
+    border-radius: 15px;
+}
+
+#pj button:hover {
+    background-color: gray;
+    opacity: 0.5;
 }
 
 iframe {
     width: 70vw;
-
 }
 
 /* FOOTER STUFF */
