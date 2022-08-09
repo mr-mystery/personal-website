@@ -30,7 +30,7 @@ div {
 
 /* PJ BUTTONS */
 
-.e button {
+.B-holder button {
     font-family: Helvetica;
     font-size: 20px;
     padding: 3px;
@@ -40,7 +40,7 @@ div {
     border-radius: 15px;
 }
 
-.e button:hover {
+.B-holder button:hover {
     background-color: gray;
     opacity: 0.5;
 }
