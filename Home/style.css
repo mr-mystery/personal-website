@@ -7,6 +7,7 @@ footer {
 }
 
 
+
 /* NAV BAR STUFF */
 
 #nav{
@@ -33,6 +34,8 @@ footer {
     opacity: 0.5;
 }
 
+
+
 /* ABOUT ME STUFF */
 
 #me {
@@ -43,12 +46,13 @@ footer {
 }
 
 #meText {
-    margin: 5%;
+    margin-right: 4%;
 }
 
 #me img {
-    width: 15em;
+    width: 20vw;
     margin: 3%;
+    margin-left: 4%;
 }
 
 #me img:hover {
@@ -81,6 +85,8 @@ label {
 
 #my-box {display: none;}
 
+
+
 /* EDU STUFF */
 
 #edu {
@@ -92,13 +98,16 @@ label {
 }
 
 #eduText {
-    margin: 5%;
+    margin-left: 4%;
 }
 
 #edu img {
-    width: 30%;
-    margin:3%
+    width: 25vw;
+    margin-right: 5%;
+    margin-left: 1%;
 }
+
+
 
 /* PJ STUFF */
 
@@ -132,6 +141,8 @@ label {
 iframe {
     width: 70vw;
 }
+
+
 
 /* FOOTER STUFF */
 
