@@ -1,9 +1,12 @@
-
 div {
     border-radius: 25px;
 }
 
-/* NAV STUFF */
+footer {
+    border-radius: 25px;
+}
+
+/* NAV BAR STUFF */
 
 #nav {
     font-family: Helvetica;
@@ -29,9 +32,11 @@ div {
     opacity: 0.5;
 }
 
+
+
 /* GALLERY STUFF */
 
-.e {
+.pictures {
     display: flex;
     flex-direction: column;
     align-items: center;
