@@ -1,3 +1,4 @@
+AOS.init();
 
 function link(num) {
     let iframe = document.getElementById('iframe')
@@ -24,6 +25,3 @@ me = {
 document.getElementById('L1').innerHTML = me.L1
 document.getElementById('L2').innerHTML = me.L2
 document.getElementById('L3').innerHTML = me.L3
-
-
-AOS.init();
