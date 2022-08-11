@@ -6,6 +6,8 @@ footer {
     border-radius: 25px;
 }
 
+
+
 /* NAV BAR STUFF */
 
 #nav {
@@ -150,7 +152,10 @@ label {
 
 iframe {
     width: 70vw;
+    height: 25vw;
 }
+
+
 
 /* FOOTER STUFF (HOME)*/
 

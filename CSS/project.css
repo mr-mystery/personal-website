@@ -6,6 +6,8 @@ footer {
     border-radius: 25px;
 }
 
+
+
 /* NAV BAR STUFF */
 
 #nav {
@@ -49,4 +51,39 @@ footer {
 .B-holder button:hover {
     background-color: gray;
     opacity: 0.5;
+}
+
+#PJtext {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    align-items: center;
+}
+
+#helloworld iframe {
+    height: 40vw;
+}
+
+
+
+/* PHONE */
+
+@media(max-width: 530px) {
+    #nav button {
+        font-size: 70%;
+    }
+
+    #PJtext {
+        display: flex;
+        flex-direction: column; 
+        font-size: 55%;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    #helloworld iframe {
+        height: 100vw;
+    }
 }
