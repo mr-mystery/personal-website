@@ -29,7 +29,7 @@ footer {
     border-radius: 15px;
 }
 
-#nav.items:hover {
+#nav .items:hover {
     background-color: gray;
     opacity: 0.5;
 }
