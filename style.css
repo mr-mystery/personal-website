@@ -84,13 +84,13 @@ footer {
     100% {transform: translate(1px, -2px) rotate(-1deg);}
 }
 
-label {
+/* #h1-label {
     font-size: 3vw;
     font-weight: 1000;
-}
+} */
 
 #my-box:checked+label {
-    color: red;
+    color: #195369;
 }
 
 #my-box {
@@ -187,9 +187,9 @@ iframe {
         flex-direction: column;
     }
 
-    label {
+    /* #h1-label {
         font-size: 200%;
-    }
+    } */
 
     #nav button {
         font-size: 55%;
