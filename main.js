@@ -24,12 +24,12 @@ function link(num) {
 function CheckBox () {
 
     AboutMe = {
-        label: "About Me:",
-
+        label1: "About Me:",
         L1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, animi repellat! Saepe recusandae numquam eligendi praesentium dolorum cumque minima ipsum, obcaecati, a molestiae at, excepturi reiciendis quisquam. Modi, quisquam ipsam?",
         L2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea eius corporis animi rem eveniet nostrum temporibus facilis illum unde quia doloremque, sit itaque molestias, nihil expedita. Accusamus, sed quae!",
         L3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur ipsum inventore ullam id tempora soluta quidem! Ut iure debitis architecto sunt, corrupti explicabo! Cum fugit error voluptatem corrupti vero.",
     
+        label2: "Super Secret Info:",
         LL1: "E",
         LL2: "E",
         LL3: "E",
@@ -41,13 +41,13 @@ function CheckBox () {
     let li3 = document.getElementById('L3')
 
     if (document.getElementById('my-box').checked == true) {
-        label.innerHTML = AboutMe.label
+        label.innerHTML = AboutMe.label2
         li1.innerHTML = AboutMe.LL1
         li2.innerHTML = AboutMe.LL2
         li3.innerHTML = AboutMe.LL3
     }
     else {
-        label.innerHTML = AboutMe.label
+        label.innerHTML = AboutMe.label1
         li1.innerHTML = AboutMe.L1
         li2.innerHTML = AboutMe.L2
         li3.innerHTML = AboutMe.L3
