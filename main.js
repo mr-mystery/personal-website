@@ -30,9 +30,9 @@ function CheckBox () {
         L3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur ipsum inventore ullam id tempora soluta quidem! Ut iure debitis architecto sunt, corrupti explicabo! Cum fugit error voluptatem corrupti vero.",
     
         label2: "Super Secret Info:",
-        LL1: "E",
-        LL2: "E",
-        LL3: "E",
+        LL1: "Super",
+        LL2: "Secret",
+        LL3: "Info",
     }
     
     let label = document.getElementById('h1-label')
