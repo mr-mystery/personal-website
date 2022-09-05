@@ -36,16 +36,16 @@ footer {
 
 .dropbtn {
     /* background-color: #272D33;
-    color: white;
+    color: white; */
     padding: 16px;
     font-size: 16px;
-    border: none; */
+    border: none; 
     font-family: Helvetica;
     background-color: #272D33;
     color: white;
-    font-size: 32px;
-    padding: 5px;
-    border-radius: 15px;
+    /* font-size: 32px; */
+    /* padding: 5px; */
+    /* border-radius: 15px; */
 }
 
 .dropdown {
