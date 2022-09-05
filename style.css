@@ -35,11 +35,17 @@ footer {
 }
 
 .dropbtn {
-    background-color: #04AA6D;
+    /* background-color: #272D33;
     color: white;
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: none; */
+    font-family: Helvetica;
+    background-color: #272D33;
+    color: white;
+    font-size: 32px;
+    padding: 5px;
+    border-radius: 15px;
 }
 
 .dropdown {
@@ -64,7 +70,7 @@ footer {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: gray;
 }
 
 .dropdown:hover .dropdown-content {
@@ -72,7 +78,16 @@ footer {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: gray;
+}
+
+@media (max-width: 530px) {
+    #nav {
+        display: none;
+    }
+    .dropdown {
+        display:block;
+    }
 }
 
 
