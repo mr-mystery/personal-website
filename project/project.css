@@ -61,7 +61,7 @@ footer {
 }
 
 #helloworld iframe {
-    height: 40vw;
+    height: 40vh;
 }
 
 
@@ -84,6 +84,6 @@ footer {
     }
 
     #helloworld iframe {
-        height: 100vw;
+        height: 100vh;
     }
 }
