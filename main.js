@@ -22,8 +22,9 @@ function link(num) {
         iframeLink = 'https://mr-mystery-13.github.io/Random-Api/'
     }
     else if(num === 'APCSP') {
-        iframeLink = 'https://saketbhanvadia.codehs.me/'
+        iframeLink = "https://codehs.com/sandbox/saketbhanvadia/yourusernamecodehsme/embed/?display_mode=displayOnly&read_only=True&show_file_tree=False"
     }
+    
     iframe.setAttribute('src', iframeLink)
     aTag.setAttribute('href', iframeLink)
 }
