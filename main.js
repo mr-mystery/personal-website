@@ -2,23 +2,30 @@ AOS.init();
 
 
 function link(num) {
-    let iframe = document.getElementById('iframe')
+    let iframe = document.getElementById('iframe');
+    let aTag = document.getElementById('iframeLink');
+    let iframeLink;
 
     if(num === 'one') {
-        iframe.setAttribute('src', 'https://mr-mystery-13.github.io/hosting-demo/')
+        iframeLink = 'https://mr-mystery-13.github.io/hosting-demo/'
     }
     else if(num === 'two') {
-        iframe.setAttribute('src', 'https://mr-mystery-13.github.io/Personal-Website/')
+        iframeLink = 'https://mr-mystery-13.github.io/Personal-Website/'
     }
     else if(num === 'three') {
-        iframe.src = 'https://mr-mystery-13.github.io/P5-Game/'
+        iframeLink = 'https://mr-mystery-13.github.io/P5-Game/'
     }
     else if(num === 'four') {
-        iframe.setAttribute('src', 'https://mr-mystery-13.github.io/firebase-messages/')
+        iframeLink = 'https://mr-mystery-13.github.io/firebase-messages/'
     }
     else if(num === 'five') {
-        iframe.setAttribute('src', 'https://mr-mystery-13.github.io/Random-Api/')
+        iframeLink = 'https://mr-mystery-13.github.io/Random-Api/'
     }
+    else if(num === 'APCSP') {
+        iframeLink = 'https://saketbhanvadia.codehs.me/'
+    }
+    iframe.setAttribute('src', iframeLink)
+    aTag.setAttribute('href', iframeLink)
 }
 
 function CheckBox () {
