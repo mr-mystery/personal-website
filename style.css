@@ -72,9 +72,9 @@
 }
 
 #me img {
-    width: 20vw;
-    margin: 3%;
-    margin-left: 4%;
+    width: 350px;
+    margin: 1.5%;
+    margin-left: 3%;
 }
 
 #me img:hover {
@@ -136,9 +136,10 @@
 }
 
 #edu img {
-    width: 25vw;
-    margin-right: 5%;
-    margin-left: 1%;
+    border-radius: 75px;
+    width: 350px;
+    margin: 10px 5% 10px 1%;
+    /* margin: top right bottom left */ 
 }
 
 
@@ -217,4 +218,11 @@ iframe {
     #nav button {
         font-size: 55%;
     }
+}
+
+
+
+/* OTHER */
+.sec {
+    background-color: #ffffffb7;
 }

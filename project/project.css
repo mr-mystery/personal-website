@@ -24,10 +24,15 @@
     justify-content: space-around;
     margin: 15px;
     align-items: center;
+    background-color: var(--tran);
+    padding: 5px;
 }
 
-#helloworld iframe {
-    height: 80vh;
+iframe {
+    background-color: var(--tran);
+    height: 79vh;
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
 
