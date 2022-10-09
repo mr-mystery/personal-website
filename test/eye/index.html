@@ -17,10 +17,42 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script src="main.js" defer></script>
+
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            padding: 0;
+            margin: 0;
+        }
+        main {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .eye{
+            height: 80px;
+            border-radius: 100px;
+        }
+
+        #eyes, #eyes img {
+            position: absolute;
+        }
+    </style>
 </head>
 
 <body>
+    <main>
+        <img id="anchor" src="rick.png">
 
-    
+        <div id="eyes">
+            <img class="eye" src="eye.png" style="top: -158px; right: -176px;">
+            <img class="eye" src="eye.png" style="top: -161px; right: -291px;">
 
+            <img class="eye" src="eye.png" style="top: 108px;right: 97px;">
+            <img class="eye" src="eye.png" style="top: 87px;right: -21px;">
+        </div>
+    </main>
 </body>
