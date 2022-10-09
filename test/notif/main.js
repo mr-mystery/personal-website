@@ -1,8 +1,5 @@
 let NotifP 
-AskNotif()
-function AskNotif() {
-    if (NotifP != "granted") Notification.requestPermission().then(perm => { NotifP = perm })
-}
+Notification.requestPermission().then(perm => { NotifP = perm })
 
 
 
@@ -30,8 +27,7 @@ function pain() {
 
 
 
-const buttonN = document.getElementById('note')
-buttonN.addEventListener('click', () => {
+document.getElementById('note').addEventListener('click', () => {
 
     // alert(perm)
 
@@ -42,7 +38,7 @@ buttonN.addEventListener('click', () => {
             data: { hello: "world" },
             icon: "images/blue-thumbs-up-icon.png",
             image: "images/blue-thumbs-up-icon.png",
-            // tag: "test",
+            tag: "test",
         })
 
         Notif.addEventListener("click", e => {
@@ -52,6 +48,7 @@ buttonN.addEventListener('click', () => {
     }
 
 })
+
 
 
 let Notif2
