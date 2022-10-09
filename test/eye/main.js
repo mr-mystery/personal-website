@@ -1,8 +1,8 @@
 let eyes = document.querySelectorAll(".eye")
 let anchor = document.getElementById('anchor')
-let rekt = anchor.getBoundingClientRect()
-let anchorX = (rekt.left + rekt.width)/2
-let anchorY = (rekt.top + rekt.height)/2
+let rekt = anchor.getBoundingClientRect() //Comment this for independent eye follow
+let anchorX = rekt.left + rekt.width/2 //Comment this for independent eye follow
+let anchorY = rekt.top + rekt.height/2 //Comment this for independent eye follow
 
 document.addEventListener("mousemove", (e) => {
     // console.log(e)
@@ -10,10 +10,15 @@ document.addEventListener("mousemove", (e) => {
     let mouseX = e.clientX
     let mouseY = e.clientY
 
-    let angleDeg = angle(mouseX, mouseY, anchorX, anchorY)
+    let angleDeg = angle(mouseX, mouseY, anchorX, anchorY) //Comment this for independent eye follow
 
     eyes.forEach(eye => {
-        eye.style.transform = `rotate(${90 + angleDeg}deg)`
+        // let rekt = eye.getBoundingClientRect() //Uncomment this for independent eye follow
+        // let anchorX = rekt.left + rekt.width/2 //Uncomment this for independent eye follow
+        // let anchorY = rekt.top + rekt.height/2 //Uncomment this for independent eye follow
+        // let angleDeg = angle(mouseX, mouseY, anchorX, anchorY) //Uncomment this for independent eye follow
+
+        eye.style.transform = `rotate(${105 + angleDeg}deg)`
         anchor.style.filter = `hue-rotate(${angleDeg}deg)`
     })
 })
