@@ -1,3 +1,4 @@
+let eyes = document.querySelectorAll(".eye")
 let anchor = document.getElementById('anchor')
 let rekt = anchor.getBoundingClientRect()
 let anchorX = (rekt.left + rekt.width)/2
@@ -11,7 +12,6 @@ document.addEventListener("mousemove", (e) => {
 
     let angleDeg = angle(mouseX, mouseY, anchorX, anchorY)
 
-    let eyes = document.querySelectorAll(".eye")
     eyes.forEach(eye => {
         eye.style.transform = `rotate(${90 + angleDeg}deg)`
         anchor.style.filter = `hue-rotate(${angleDeg}deg)`
