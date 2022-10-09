@@ -17,11 +17,91 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
     <script src="main.js" defer></script>
+
+    <style>
+        .stuff {
+            display: flex;
+            justify-content: center;
+
+            gap: 25px;
+        }
+
+        .stuff button{
+            width: 100px;
+            height: 50px;
+
+            border: 1px solid black;
+            border-radius: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .boxC {
+            display: flex;
+            justify-content: center;
+
+            gap: 25px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+
+            border: 5px solid black;
+            border-radius: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #b1 {
+            background-color: red;
+            animation: 5s linear infinite z;
+        }
+
+        @keyframes z{
+            0% { rotate: 0deg; }
+            100% { rotate: 360deg; }
+        }
+
+        #b2 {
+            background-color:indianred;
+            animation: 5s linear infinite x;
+        }
+
+        @keyframes x{
+            0% { rotate: x 0deg; }
+            100% { rotate: x 360deg; }
+        }
+
+        #b3 {
+            background: cyan;
+            animation: 5s linear infinite y;
+        }
+
+        @keyframes y{
+            0% { rotate: y 0deg; }
+            100% { rotate: y 360deg; }
+        }
+
+    </style>
 </head>
 
 <body>
 
-    <a href="notif/index.html"><button>nofif</button></a>
-    <a href="eye/index.html"><button>eye</button></a>
+    <div class="stuff">
+        <a href="notif/index.html"><button><h1>Notification</h1></button></a>
+        <a href="eye/index.html"><button><h1>Eyeballs that Follow Mouse Around (Proximity Hover Effect)</h1></button></a>
+    </div>
 
+    <hr>
+
+    <div class="boxC">
+        <div class="box" id="b1"><h1>Hi</h1></div>
+        <div class="box" id="b2"><h1>Hi</h1></div>
+        <div class="box" id="b3"><h1>Hi</h1></div>
+    </div>
 </body>
