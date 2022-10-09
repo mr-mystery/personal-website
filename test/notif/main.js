@@ -1,3 +1,11 @@
+let NotifP 
+AskNotif()
+function AskNotif() {
+    if (NotifP != "granted") Notification.requestPermission().then(perm => { NotifP = perm })
+}
+
+
+
 function Alert() {
     alert("Hello\nHow are you?");
     confirm("Press a button!")
@@ -25,25 +33,24 @@ function pain() {
 const buttonN = document.getElementById('note')
 buttonN.addEventListener('click', () => {
 
-    Notification.requestPermission().then(perm => {
-        // alert(perm)
+    // alert(perm)
 
-        if (perm === "granted") {
+    if (NotifP === "granted") {
 
-            const Notif = new Notification("Example Notification", {
-                body: "Math.random() is cool! " + Math.random(),
-                data: { hello: "world" },
-                icon: "images/blue-thumbs-up-icon.png",
-                image: "images/blue-thumbs-up-icon.png",
-                // tag: "test",
-            })
+        const Notif = new Notification("Example Notification", {
+            body: "Math.random() is cool! " + Math.random(),
+            data: { hello: "world" },
+            icon: "images/blue-thumbs-up-icon.png",
+            image: "images/blue-thumbs-up-icon.png",
+            // tag: "test",
+        })
 
-            Notif.addEventListener("click", e => {
-                alert("CLICK!")
-            })
+        Notif.addEventListener("click", e => {
+            alert("CLICK!")
+        })
 
-        }
-    })
+    }
+
 })
 
 
@@ -51,7 +58,7 @@ let Notif2
 let interval
 document.addEventListener("visibilitychange", () => {
     
-    if (document.visibilityState === "hidden" && x == true) {
+    if (NotifP === "granted" && document.visibilityState === "hidden" && x === true) {
         
         const leave = new Date()
 
