@@ -177,6 +177,7 @@ iframe {
     width: 70vw;
     height: 600px;
     border: 1px solid black;
+    background-color: var(--iframeBC);
 }
 
 
