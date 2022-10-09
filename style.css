@@ -1,43 +1,4 @@
-html {
-    scroll-behavior: smooth;
-}
-
-div {
-    border-radius: 25px;
-}
-
-footer {
-    border-radius: 25px;
-}
-
-
-
 /* NAV BAR STUFF */
-
-#nav {
-    font-family: Helvetica;
-    background-color: #272D33;
-    color: white;
-    font-size: 32px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-}
-
-#nav button {
-    font-family: Helvetica;
-    background-color: #272D33;
-    color: white;
-    font-size: 32px;
-    padding: 5px;
-    border-radius: 15px;
-}
-
-#nav .items:hover {
-    background-color: gray;
-    opacity: 0.5;
-}
-
 
 .dropbtn { 
     background-color: #272D33;
