@@ -12,11 +12,13 @@
 
 .gallery {
     margin: 1vw;
-    border: 1px solid #ccc;
-    width: 90vw;
+    border: 1px solid #000;
+    width: 45vw;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--tran);
 }
 
 .gallery:hover{
@@ -33,12 +35,12 @@
     text-align: center;
 }
 
-img:hover {
-    animation: shake 0.5s; 
+.gallery:hover img{
+    animation: spin 0.5s; 
     animation-iteration-count: infinite;
 }
 
-@keyframes shake {
+@keyframes spin {
     /* 0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
