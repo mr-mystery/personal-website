@@ -4,6 +4,8 @@ function Popup() {
     prompt("sometext","defaultText")
 }
 
+
+
 const buttonN = document.getElementById('note')
 buttonN.addEventListener('click', () => {
 

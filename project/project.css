@@ -22,8 +22,8 @@
 #PJtext {
     display: flex;
     justify-content: space-around;
-    margin: 15px;
     align-items: center;
+    margin: 15px;
     background-color: var(--tran);
     padding: 5px;
 }

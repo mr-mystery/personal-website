@@ -52,6 +52,7 @@
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }  */
+    
     0% { transform: rotate(0deg); }
     1% { transform: rotate(3.6deg); }
     2% { transform: rotate(7.2deg); }

@@ -1,6 +1,7 @@
 AOS.init();
 
 
+
 function link(num) {
     let iframe = document.getElementById('iframe');
     let aTag = document.getElementById('iframeLink');
@@ -28,6 +29,8 @@ function link(num) {
     iframe.setAttribute('src', iframeLink)
     aTag.setAttribute('href', iframeLink)
 }
+
+
 
 function CheckBox () {
 
