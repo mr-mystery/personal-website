@@ -1,0 +1,139 @@
+body {
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* NAV */
+
+.stuff {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+.stuff button{
+    padding: 50px 25px;
+    height: 50px;
+
+    border: 1px solid black;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* SPIN BOX */
+
+.boxC {
+    display: flex;
+    justify-content: center;
+    padding: 55px 0px;
+    gap: 55px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    
+    border: 5px solid black;
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#b1 {
+    background: linear-gradient(to right top, orange, blue);
+    animation: Rz 5s linear infinite;
+}
+
+@keyframes Rz{
+    0% { rotate: 0deg; }
+    100% { rotate: 360deg; }
+}
+
+#b2 {
+    background:linear-gradient(to top, yellow, purple);
+    animation: Rx 5s linear infinite;
+}
+
+@keyframes Rx{
+    0% { rotate: x 0deg; }
+    100% { rotate: x 360deg; }
+}
+
+#b3 {
+    background: linear-gradient(to right, red, green);
+    animation: Ry 5s linear infinite;
+}
+
+@keyframes Ry{
+    0% { rotate: y 0deg; }
+    100% { rotate: y 360deg; }
+}
+
+
+
+/* Side Text */
+
+.grad {
+    font-size: 100px;
+    writing-mode: vertical-lr;
+    background: linear-gradient(to right,#437ccd,#45d6ca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: fade 1s ease-in 1s forwards;
+    pointer-events: none;
+    opacity: 0;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Snap */
+
+.con {
+    width: 20rem;
+    height: 20rem;
+    background: white;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.con div {
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    color: white;
+    scroll-snap-align: center;
+}
+
+
+
+/* Resize Box */
+
+.resize {
+    margin: 0px 20px;
+    padding: 2rem;
+    border: 1px solid black;
+    overflow: auto;
+    resize: both;
+}
