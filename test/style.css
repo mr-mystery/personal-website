@@ -1,5 +1,10 @@
 body {
     padding: 10px;
+    background-color: #141414;
+}
+
+* {
+    color: white;
 }
 
 .flex {
@@ -19,16 +24,25 @@ body {
     gap: 25px;
 }
 
-.stuff button{
-    padding: 50px 25px;
-    height: 50px;
+.stuff a {
+    text-decoration: none;
+}
 
+.stuff button{
+    padding: 20px 15px;
+
+    background-color: #36393f;
     border: 1px solid black;
     border-radius: 25px;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+
+    transition: all 100ms;
+}
+.stuff button:hover{
+    background-color: #36393f91;
 }
 
 
@@ -46,7 +60,7 @@ body {
     width: 200px;
     height: 200px;
     
-    border: 5px solid black;
+    border: 2px solid #ffffff;
     border-radius: 25px;
 
     display: flex;
@@ -138,4 +152,33 @@ body {
     border: 1px solid black;
     overflow: auto;
     resize: both;
+}
+
+
+
+/* Trailer */
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+body:hover>#trailer {
+    opacity: 1;
+}
+
+#trailer {
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
 }

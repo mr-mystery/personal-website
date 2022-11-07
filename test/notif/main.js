@@ -1,29 +1,29 @@
-let NotifP 
-Notification.requestPermission().then(perm => { NotifP = perm })
+let NotifP;
+Notification.requestPermission().then(perm => { NotifP = perm });
 
 
 
 function Alert() {
     alert("Hello\nHow are you?");
-    confirm("Press a button!")
-    prompt("Ello! How are you?","Eh")
-}
+    confirm("Press a button!");
+    prompt("Ello! How are you?","Eh");
+};
 
 
 
-let x = false
+let x = false;
 function pain() {
     if(x === false) {
-        x = true
-        y = 'Toggle Pain (Currently On)'
+        x = true;
+        y = 'Toggle Pain (Currently On)';
     }
     else {
-        x = false
-        y = 'Toggle Pain (Currently Off)'
+        x = false;
+        y = 'Toggle Pain (Currently Off)';
     }
 
-    document.getElementById('pain').innerHTML = y
-}
+    document.getElementById('pain').innerHTML = y;
+};
 
 
 

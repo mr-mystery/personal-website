@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,28 +14,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/> -->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
     
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
 </head>
 
 <body>
 
+    <div id="trailer"></div>
+
     <div class="stuff">
-        <a href="notif/index.html"><button><h1>Notification</h1></button></a>
-        <a href="eye/index.html"><button><h1>Eyeballs that Follow Mouse Around (Proximity Hover Effect)</h1></button></a>
+        <a href="notif/index.html"><button><h3>Notification</h3></button></a>
+        <a href="eye/index.html"><button><h3>Eyeballs that Follow Mouse Around (Proximity Hover Effect)</h3></button></a>
+        <a href="trail/index.html"><button><h3>Cursor Trailer</h3></button></a>
     </div>
 
-    <hr>
+    <hr style="color: white;">
 
     <div class="flex">
 
-        <div class="boxC">
+        <div class="boxC row">
             <div class="box" id="b1"><h1>Hi</h1></div>
             <div class="box" id="b2"><h1>Hi</h1></div>
             <div class="box" id="b3"><h1>Hi</h1></div>
         </div>
+
+    </div>
+
+    <hr style="color: white;">
+
+    <div class="flex">
 
         <div style="margin-left: 55px; display: flex; flex-direction: column;">
 
@@ -45,7 +57,7 @@
 
             <div>
                 <label for="nerd">NERD: </label>
-                <input list="nerd">
+                <input list="nerd" style="color: black;">
                 <datalist id="nerd">
                     <option>N</option>
                     <option>E</option>
@@ -55,24 +67,27 @@
                     <option>NERDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD</option>
                 </datalist>
             </div>
-            
+
             <div>
                 <label for="ez">EZ: </label>
-                <select name="ez" id="ez">
-                    <option value="ez">ez</option>
-                    <option value="Ez">Ez</option>
-                    <option value="EZ">EZ</option>
-                    <option value="EZZ">EZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</option>
+                <select name="ez" id="ez" style="color: black;">
+                    <option value="ez" style="color: black;">ez</option>
+                    <option value="Ez" style="color: black;">Ez</option>
+                    <option value="EZ" style="color: black;">EZ</option>
+                    <option value="EZZ" style="color: black;">EZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</option>
                 </select>
             </div>
 
         </div>
-        
+
+        <div class="resize" style="background-color: #36393f;"><h1>You can resize this box!</h1></div>
+
     </div>
 
-    <hr>
+    <hr style="color: white;">
 
     <div class="flex test">
+
         <h1 class="grad">Welcome</h1>
 
         <div class="con">
@@ -83,7 +98,6 @@
             <div class="box5" style="background-color: darkcyan;">5</div>
         </div>
 
-        <div class="resize"><h1>You can resize this box!</h1></div>
     </div>
 
 </body>
