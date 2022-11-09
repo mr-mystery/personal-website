@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Saket's Website | Trailer</title>
+    <title>Saket's Website | Trailer V2</title>
     <link rel="shortcut icon" href="../../images/blue-thumbs-up-icon.png"/>
     
     <script src="main.js" defer></script>
@@ -18,12 +18,10 @@
             min-height: 100vh;
             margin: 0px;
         }
-    
-        body:hover>#trailer {
+        body:hover > .trailer {
             opacity: 1;
         }
-    
-        #trailer {
+        .trailer {
             height: 20px;
             width: 20px;
             background-color: white;
@@ -38,30 +36,63 @@
             opacity: 0;
             transition: opacity 500ms ease;
         }
+
+        button{
+            padding: 15px 15px;
+            color: white;
+            background-color: #36393f;
+            border: 0.5px solid black;
+            border-radius: 12px;
+            transition: all 300ms;
+        }
+        button:hover{
+            background-color: #36393f91;
+        }
     </style>
 
 </head>
 
 <body>
 
-    <div id="trailer"></div>
+    <div style="display: flex; padding: 5px; gap: 5px;">
+        <button id="AddT">Add</button>
+        <button id="RemoveT">Remove</button>
+    </div>
+
+    <div id="trailer" class="trailer"></div>
 
     <script>
-        const trailer = document.getElementById("trailer");
-    
+        const trailerM = document.getElementById("trailer");
+        let trailer = document.querySelectorAll(".trailer");
+        let i;
+
         window.onmousemove = e => {
-            const x = e.clientX - trailer.offsetWidth / 2;
-            const y = e.clientY - trailer.offsetHeight / 2;
-    
-            const keyframes = {
-                transform: `translate(${x}px, ${y}px)`
-            };
-    
-            trailer.animate(keyframes, {
-                duration: 800,
-                fill: "forwards"
-            });
-        };
+            const x = e.clientX - trailerM.offsetWidth / 2;
+            const y = e.clientY - trailerM.offsetHeight / 2;
+            
+            i = 0
+            trailer.forEach( t => {
+                t.animate({transform: `translate(${x}px, ${y}px)`}, {
+                    duration: 800 + i,
+                    fill: "forwards"
+                })
+                i += 800
+            })
+        }
+
+        document.getElementById("AddT").onclick = () => {
+            let element = document.createElement('div');
+            element.classList.add("trailer");
+            document.body.appendChild(element);
+            trailer = document.querySelectorAll(".trailer");
+        }
+
+        document.getElementById("RemoveT").onclick = () => {
+            if (trailer[1]) {
+                trailer[1].remove();
+                trailer = document.querySelectorAll(".trailer");
+            }
+        }
     </script>
 
 </body>
