@@ -32,20 +32,19 @@ function link(num) {
 
 
 
-function CheckBox () {
-
+function CheckBox() {
     AboutMe = {
         label1: "About Me:",
         L1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, animi repellat! Saepe recusandae numquam eligendi praesentium dolorum cumque minima ipsum, obcaecati, a molestiae at, excepturi reiciendis quisquam. Modi, quisquam ipsam?",
         L2: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ea eius corporis animi rem eveniet nostrum temporibus facilis illum unde quia doloremque, sit itaque molestias, nihil expedita. Accusamus, sed quae!",
         L3: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur ipsum inventore ullam id tempora soluta quidem! Ut iure debitis architecto sunt, corrupti explicabo! Cum fugit error voluptatem corrupti vero.",
-    
+
         label2: "Super Secret Info:",
         LL1: "Super (More Info Coming Soon)",
         LL2: "Secret (More Info Coming Soon)",
         LL3: "Info (More Info Coming Soon)",
     }
-    
+
     let label = document.getElementById('h1-label')
     let li1 = document.getElementById('L1')
     let li2 = document.getElementById('L2')
@@ -63,5 +62,4 @@ function CheckBox () {
         li2.innerHTML = AboutMe.L2
         li3.innerHTML = AboutMe.L3
     }
-
 }

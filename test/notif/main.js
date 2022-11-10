@@ -54,9 +54,9 @@ document.getElementById('note').addEventListener('click', () => {
 let Notif2
 let interval
 document.addEventListener("visibilitychange", () => {
-    
+
     if (NotifP === "granted" && document.visibilityState === "hidden" && x === true) {
-        
+
         const leave = new Date()
 
         interval = setInterval(() => {
