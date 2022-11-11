@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--tran);
+    background-color: var(--tGray);
 }
 
 .gallery:hover{
@@ -33,6 +33,7 @@
 .desc {
     padding: 15px;
     text-align: center;
+    color: white;
 }
 
 .gallery:hover img{
