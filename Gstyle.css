@@ -21,6 +21,7 @@ footer {
     --main-color: #272D33;
     --tran: #ffffffb7;
     --iframeBC: #ffffffd7;
+    --tGray: #272d33c2;
 }
 
 
@@ -52,7 +53,7 @@ footer {
 #nav {
     /* font-family: Helvetica; */
     font-family: 'Comfortaa';
-    background-color: #272D33;
+    background-color: var(--main-color);
     color: white;
     font-size: 32px;
     padding: 5px;
@@ -63,7 +64,7 @@ footer {
 #nav button {
     /* font-family: Helvetica; */
     font-family: 'Comfortaa';
-    background-color: #272D33;
+    background-color: var(--main-color);
     color: white;
     font-size: 32px;
     padding: 5px;
