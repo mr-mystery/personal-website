@@ -47,7 +47,7 @@
 }
 
 #my-box:checked+label {
-    color: #195369;
+    color: #ff0000;
 }
 
 #my-box {
