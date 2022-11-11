@@ -31,7 +31,7 @@
 }
 
 iframe {
-    background-color: var(--iframeG);
+    background-color: var(--iframeT);
     height: 79vh;
     border: 1px solid black;
     border-radius: 15px;

@@ -7,9 +7,9 @@ html {
 :root {
     --main: #272D33;
     --tGray: #272d33c2;
-    --iframeG: #272d33e7;
+    /* --iframeT: #272d33e7; */
+    --iframeT: #ffffffd7;
     --tran: #ffffffb7;
-    --iframetran: #ffffffd7;
 }
 
 div {
