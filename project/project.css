@@ -5,7 +5,7 @@
     font-size: 20px;
     padding: 3px;
     width: 175px;
-    background-color: var(--main-color);
+    background-color: var(--main);
     color: white;
     border-radius: 15px;
 }
