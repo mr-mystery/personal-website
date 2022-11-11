@@ -4,6 +4,13 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --main-color: #272D33;
+    --tran: #ffffffb7;
+    --iframeBC: #ffffffd7;
+    --tGray: #272d33c2;
+}
+
 div {
     border-radius: 25px;
 }
@@ -18,13 +25,6 @@ iframe {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-:root {
-    --main-color: #272D33;
-    --tran: #ffffffb7;
-    --iframeBC: #ffffffd7;
-    --tGray: #272d33c2;
 }
 
 
