@@ -5,7 +5,7 @@
     font-size: 20px;
     padding: 3px;
     width: 175px;
-    background-color: #272D33;
+    background-color: var(--main-color);
     color: white;
     border-radius: 15px;
 }
@@ -20,18 +20,18 @@
     justify-content: space-around;
     align-items: center;
     margin: 15px;
-    background-color: var(--tran);
+    background-color: var(--tGray);
     padding: 5px;
 }
 
 #helloworld{
-    background-color: var(--tran);
+    background-color: var(--tGray);
     height: 79vh;
     border-radius: 15px;
 }
 
 iframe {
-    background-color: var(--iframeBC);
+    background-color: var(--iframeG);
     height: 79vh;
     border: 1px solid black;
     border-radius: 15px;

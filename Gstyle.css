@@ -6,9 +6,10 @@ html {
 
 :root {
     --main-color: #272D33;
-    --tran: #ffffffb7;
-    --iframeBC: #ffffffd7;
     --tGray: #272d33c2;
+    --iframeG: #272d33d7;
+    --tran: #ffffffb7;
+    --iframetran: #ffffffd7;
 }
 
 div {
