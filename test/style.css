@@ -70,32 +70,38 @@ body {
 
 #b1 {
     background: linear-gradient(to right top, orange, blue);
-    animation: Rz 5s linear infinite;
+    animation: b1 5s linear infinite;
 }
-
-@keyframes Rz{
+@keyframes b1{
     0% { rotate: 0deg; }
     100% { rotate: 360deg; }
 }
 
 #b2 {
     background:linear-gradient(to top, yellow, purple);
-    animation: Rx 5s linear infinite;
+    animation: b2 5s linear infinite;
 }
-
-@keyframes Rx{
+@keyframes b2{
     0% { rotate: x 0deg; }
     100% { rotate: x 360deg; }
 }
 
 #b3 {
     background: linear-gradient(to right, red, green);
-    animation: Ry 5s linear infinite;
+    animation: b3 5s linear infinite;
 }
-
-@keyframes Ry{
+@keyframes b3{
     0% { rotate: y 0deg; }
     100% { rotate: y 360deg; }
+}
+
+#b4 {
+    background: linear-gradient(to right, black, white);
+    animation: b4 5s linear infinite;
+}
+@keyframes b4{
+    0% { transform: rotate3d(1, 1, 1, 0deg); }
+    100% { transform: rotate3d(1, 1, 1, 360deg); }
 }
 
 
