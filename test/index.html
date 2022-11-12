@@ -67,7 +67,7 @@
 
             <div>
                 <label for="ez">EZ: </label>
-                <select name="ez" id="ez" style="color: black;" onchange="OptionList()">
+                <select name="ez" id="ez" style="color: black;" onchange="OptionList(this)">
                     <option value="ez" style="color: black;">ez</option>
                     <option value="Ez" style="color: black;">Ez</option>
                     <option value="EZ" style="color: black;">EZ</option>
@@ -98,8 +98,9 @@
     </div>
 
     <script>
-        function OptionList() {
-            alert(document.getElementById("ez").value);
+        function OptionList(elem) {
+            // alert(document.getElementById("ez").value);
+            alert(elem.value);
         }
     </script>
 
