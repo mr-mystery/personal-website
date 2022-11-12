@@ -128,7 +128,8 @@ iframe {
 }
 
 #footer img {
-    width: 30%;
+    height: 10vh;
+    max-height: 150px;
 }
 
 
