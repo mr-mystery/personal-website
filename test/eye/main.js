@@ -20,7 +20,7 @@ document.addEventListener("mousemove", (e) => {
         let anchorY = rekt.top + rekt.height/2; //Uncomment this for independent eye follow
         angleDeg = angle(mouseX, mouseY, anchorX, anchorY); //Uncomment this for independent eye follow
 
-        eye.style.transform = `rotate(${105 + angleDeg}deg)`;
+        eye.style.transform = `rotate(${90 + angleDeg}deg)`;
     });
 
     anchor.style.filter = `hue-rotate(${angleDeg}deg)`;
