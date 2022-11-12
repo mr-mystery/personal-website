@@ -53,6 +53,7 @@
 </head>
 
 <body>
+
     <div style="display: flex; justify-content: space-between; padding: 5px;">
 
         <div style="display: flex; gap: 5px;">
@@ -67,6 +68,7 @@
     <div id="trailer" class="trailer"></div>
 
     <script>
+
         const trailerM = document.getElementById("trailer");
         let trailer = document.querySelectorAll(".trailer");
         let i;
@@ -75,29 +77,30 @@
             const x = e.clientX - trailerM.offsetWidth / 2;
             const y = e.clientY - trailerM.offsetHeight / 2;
             
-            i = 0
+            i = 0;
             trailer.forEach( t => {
                 t.animate({transform: `translate(${x}px, ${y}px)`}, {
                     duration: 800 + i,
-                    fill: "forwards"
-                })
-                i += 800
-            })
-        }
+                    fill: "forwards",
+                });
+                i += 800;
+            });
+        };
 
         document.getElementById("AddT").onclick = () => {
             let element = document.createElement('div');
             element.classList.add("trailer");
             document.body.appendChild(element);
             trailer = document.querySelectorAll(".trailer");
-        }
+        };
 
         document.getElementById("RemoveT").onclick = () => {
             if (trailer[1]) {
                 trailer[1].remove();
                 trailer = document.querySelectorAll(".trailer");
-            }
-        }
+            };
+        };
+
     </script>
 
 </body>

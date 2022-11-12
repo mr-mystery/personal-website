@@ -20,16 +20,14 @@ function pain() {
     else {
         x = false;
         y = 'Toggle Pain (Currently Off)';
-    }
+    };
 
-    document.getElementById('pain').innerHTML = y;
+    document.getElementById('paintxt').innerHTML = y;
 };
 
 
 
 document.getElementById('note').addEventListener('click', () => {
-
-    // alert(perm)
 
     if (NotifP === "granted") {
 
@@ -39,39 +37,39 @@ document.getElementById('note').addEventListener('click', () => {
             icon: "images/blue-thumbs-up-icon.png",
             image: "images/blue-thumbs-up-icon.png",
             tag: "test",
-        })
+        });
 
         Notif.addEventListener("click", e => {
-            alert("CLICK!")
-        })
+            alert("CLICK!");
+        });
 
-    }
+    };
 
-})
+});
 
 
 
-let Notif2
-let interval
+let Notif2;
+let interval;
 document.addEventListener("visibilitychange", () => {
 
     if (NotifP === "granted" && document.visibilityState === "hidden" && x === true) {
 
-        const leave = new Date()
+        const leave = new Date();
 
         interval = setInterval(() => {
 
             Notif2 = new Notification("Come Back Pls", {
                 body: `You have been gone for ${Math.round((new Date() - leave) / 1000)}.`,
                 tag: "comeback",
-            })
+            });
 
-        }, 1000)
+        }, 1000);
+
     }
-
     else {
-        if (interval) clearInterval(interval)
-        if (Notif2) Notif2.close()
-    }
+        if (interval) clearInterval(interval);
+        if (Notif2) Notif2.close();
+    };
 
-})
+});

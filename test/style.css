@@ -20,7 +20,6 @@ body {
 .stuff {
     display: flex;
     justify-content: center;
-
     gap: 25px;
 }
 
@@ -59,7 +58,7 @@ body {
 .box {
     width: 200px;
     height: 200px;
-    
+
     border: 2px solid #ffffff;
     border-radius: 25px;
 

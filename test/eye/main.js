@@ -24,13 +24,14 @@ document.addEventListener("mousemove", (e) => {
     });
 
     anchor.style.filter = `hue-rotate(${angleDeg}deg)`;
+
 });
 
 function angle(cx, cy, ex, ey) {
-    // let dy = ey - cy
-    // let dx = ex - cx
-    // let rad = Math.atan2(dy, dx)
-    // let deg = rad * 180 / Math.PI
-    // return deg
+    // let dy = ey - cy;
+    // let dx = ex - cx;
+    // let rad = Math.atan2(dy, dx);
+    // let deg = rad * 180 / Math.PI;
+    // return deg;
     return (Math.atan2((ey - cy), (ex - cx))) * 180 / Math.PI;
 };
