@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saket's Website | Trailer V1</title>
+    <link rel="shortcut icon" href="../../images/blue-thumbs-up-icon.png"/>
+    
+    <script src="main.js" defer></script>
+
+    <style>
+        body {
+            background-color: #141414;
+            min-height: 100vh;
+            margin: 0px;
+        }
+
+        body:hover > .trailer {
+            opacity: 1;
+        }
+
+        .trailer {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            border-radius: 50px;
+            border: 1px solid black;
+
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: 10000;
+
+            pointer-events: none;
+            transition: opacity 500ms ease;
+        }
+
+        .eyeball {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 10px;
+            background-color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="trailerL" class="trailer">
+        <div class="eye" style="height:50px; width:50px;">
+            <div class="eyeball" style="top: 30px; left:25px;"></div>
+        </div>
+    </div>
+
+    <div id="trailerR" class="trailer">
+        <div class="eye" style="height: 50px; width:50px;">
+            <div class="eyeball" style="top: 30px; left:25px;"></div>
+        </div>
+    </div>
+
+    <script>
+
+        let eyes = document.querySelectorAll(".eye");
+        let trailerL = document.getElementById("trailerL");
+        let trailerR = document.getElementById("trailerR");
+
+        window.onmousemove = e => {
+            let x = e.clientX;
+            let y = e.clientY;
+
+            trailerL.animate({transform: `translate(${x}px, ${y - trailerL.offsetHeight / 2}px)`}, {
+                duration: 1200,
+                fill: "forwards"
+            });
+            trailerR.animate({transform: `translate(${x - trailerL.offsetWidth}px, ${y - trailerL.offsetHeight / 2}px)`}, {
+                duration: 1200,
+                fill: "forwards"
+            });
+
+            eyes.forEach(eye => {
+                let rekt = eye.getBoundingClientRect();
+                let anchorX = rekt.left + rekt.width/2;
+                let anchorY = rekt.top + rekt.height/2;
+                angleDeg = (Math.atan2((anchorY - y), (anchorX - x))) * 180 / Math.PI;
+
+                eye.style.transform = `rotate(${120 + angleDeg}deg)`;
+            });
+        };
+
+    </script>
+
+</body>
+
+</html>
