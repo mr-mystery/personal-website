@@ -4,10 +4,10 @@ const observer = new IntersectionObserver(
             entry.target.classList.toggle("show", entry.isIntersecting)
             // if (entry.isIntersecting) observer.unobserve(entry.target) //Only play animation once
         })
-    // console.log(entries)
+        // console.log(entries)
     },
     {
-        threshold: 1, 
+        threshold: 1,
         // 0 - 1
         // 0 = 0% of elem on screen before animation play (just about to enter screen)
         // 1 = 100% of elem on screen before animation play (fully entered screen)
@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(
 )
 
 const cards = document.querySelectorAll(".card")
-cards.forEach( card => {
+cards.forEach(card => {
     observer.observe(card)
 })
 
@@ -28,7 +28,7 @@ const lastCardObserver = new IntersectionObserver(
         loadNewCards()
         lastCardObserver.unobserve(lastCard.target)
         lastCardObserver.observe(document.querySelector(".card:last-child"))
-    }, 
+    },
     {
         rootMargin: "100px",
         // Changes root element's bounding box
