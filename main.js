@@ -8,19 +8,19 @@ function link(num) {
     let iframeLink;
 
     if(num === 'one') {
-        iframeLink = 'https://mr-mystery-13.github.io/hosting-demo/'
+        iframeLink = 'https://mr-mystery.github.io/hosting-demo/'
     }
     else if(num === 'two') {
-        iframeLink = 'https://mr-mystery-13.github.io/Personal-Website/'
+        iframeLink = 'https://mr-mystery.github.io/Personal-Website/'
     }
     else if(num === 'three') {
-        iframeLink = 'https://mr-mystery-13.github.io/P5-Game/'
+        iframeLink = 'https://mr-mystery.github.io/P5-Game/'
     }
     else if(num === 'four') {
-        iframeLink = 'https://mr-mystery-13.github.io/firebase-messages/'
+        iframeLink = 'https://mr-mystery.github.io/firebase-messages/'
     }
     else if(num === 'five') {
-        iframeLink = 'https://mr-mystery-13.github.io/Random-Api/'
+        iframeLink = 'https://mr-mystery.github.io/Random-Api/'
     }
     else if(num === 'APCSP') {
         iframeLink = "https://codehs.com/sandbox/saketbhanvadia/yourusernamecodehsme/embed/?display_mode=displayOnly&read_only=True&show_file_tree=False"
