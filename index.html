@@ -92,17 +92,31 @@
 
             <h1>Projects:</h1>
 
-            <div class="B-holder"><button onclick="link('one')">Project 1:<br>Hello World</button></div>
+            <div class="B-holder"><button onclick="link('one')">Hello World</button></div>
             <br>
-            <div class="B-holder"><button onclick="link('two')">Project 2:<br>Portfolio Website</button></div>
+            <div class="B-holder"><button onclick="link('two')">Portfolio Website</button></div>
             <br>
-            <div class="B-holder"><button onclick="link('three')">Project 3:<br>P5 Game</button></div>
+            <div class="B-holder"><button onclick="link('three')">P5 Game</button></div>
             <br>
-            <div class="B-holder"><button onclick="link('four')">Project 4:<br>Firebase Messages</button></div>
+            <div class="B-holder"><button onclick="link('four')">Firebase Messages</button></div>
             <br>
-            <div class="B-holder"><button onclick="link('five')">Project 5:<br>Random API</button></div>
+            <div class="B-holder"><button onclick="link('five')">Random API</button></div>
             <br>
-            <div class="B-holder"><button onclick="link('APCSP')">Project 6:<br>AP CSP Website</button></div>
+            <div class="B-holder">
+                <button >AP CSP Projects:<br>
+                    <div>
+                        <select name="linkdrop" id="linkdrop" style="color: black;" onchange="linkdrop(this)">
+                            <option value=" "></option>
+                            <option value="APCSP">AP CSP Website</option>
+                            <option value="adventure">Choose Your Own Adventure</option>
+                            <option value="cipher">Ciphers</option>
+                            <option value="turtle">Turtle Art</option>
+                            <!-- <option value="4"></option> -->
+                            <!-- <option value="5"></option> -->
+                        </select>
+                    </div>
+                </button>
+            </div>
             <br>
             
             <a href="project/project.html" class="B-holder"><button>Project Page</button></a>
