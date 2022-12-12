@@ -4,7 +4,7 @@ const observer = new IntersectionObserver(
             entry.target.classList.toggle("show", entry.isIntersecting);
             // if (entry.isIntersecting) observer.unobserve(entry.target); //Only play animation once
         });
-        // console.log(entries)
+        // console.log(entries);
     },
     {
         threshold: 1,
