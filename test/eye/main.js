@@ -5,6 +5,7 @@ let anchor = document.getElementById('anchor');
 // let anchorY = rekt.top + rekt.height/2; //Comment this for independent eye follow
 
 document.addEventListener("mousemove", (e) => {
+
     // console.log(e);
 
     let mouseX = e.clientX;
@@ -19,7 +20,6 @@ document.addEventListener("mousemove", (e) => {
         let anchorX = rekt.left + rekt.width/2; //Uncomment this for independent eye follow
         let anchorY = rekt.top + rekt.height/2; //Uncomment this for independent eye follow
         angleDeg = angle(mouseX, mouseY, anchorX, anchorY); //Uncomment this for independent eye follow
-
         eye.style.transform = `rotate(${90 + angleDeg}deg)`;
     });
 

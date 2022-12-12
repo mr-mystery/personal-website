@@ -1,5 +1,5 @@
 let NotifP;
-Notification.requestPermission().then(perm => { NotifP = perm });
+Notification.requestPermission().then( perm => { NotifP = perm });
 
 
 
