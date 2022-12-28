@@ -15,33 +15,33 @@ html {
 /* https://bouncecss.bookie0.repl.co/bounce.css */
 /* <link href="https://bouncecss.bookie0.repl.co/bounce.css" rel="stylesheet" type="text/css"/> */
 
-	--white: #ffffff;
+    --white: #ffffff;
 
-	--light-gray: #EFEFEF;
-	--gray: #D8D8D8;
+    --light-gray: #EFEFEF;
+    --gray: #D8D8D8;
 
-	--black: #000000;
-	--dark-gray: #5E5E5E;
+    --black: #000000;
+    --dark-gray: #5E5E5E;
 
-	/* --cyan-dark: #28A489;
-	--cyan-normal: #70F1D5;
-	--cyan-light: #CAFFF3; */
+    /* --cyan-dark: #28A489;
+    --cyan-normal: #70F1D5;
+    --cyan-light: #CAFFF3; */
 
-	/* --pink-dark: #AB4787;
-	--pink-normal: #E065B3;
-	--pink-light: #FFB0E2; */
+    /* --pink-dark: #AB4787;
+    --pink-normal: #E065B3;
+    --pink-light: #FFB0E2; */
 
-	/* --yellow-dark: #C9B951;
-	--yellow-normal: #FAE560;
-	--yellow-light: #FFF6BE; */
+    /* --yellow-dark: #C9B951;
+    --yellow-normal: #FAE560;
+    --yellow-light: #FFF6BE; */
 
-	/* --blue-dark: #468DB6;
-	--blue-normal: #54B8F3;
-	--blue-light: #B4E3FF; */
+    /* --blue-dark: #468DB6;
+    --blue-normal: #54B8F3;
+    --blue-light: #B4E3FF; */
 
-	/* --purple-dark: #643F9B;
-	--purple-normal: #9260DE;
-	--purple-light: #CDAEFD; */
+    /* --purple-dark: #643F9B;
+    --purple-normal: #9260DE;
+    --purple-light: #CDAEFD; */
 }
 
 /* ::-webkit-scrollbar {
@@ -59,27 +59,27 @@ html {
 } */
 
 a.f {
-	text-decoration: none;
-	color: var(--white); /* color: var(--black); */
-	font-size: 16px;
-	padding: 2px 4px;
-	border-radius: 2px;
-	transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5), box-shadow 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
-	width: fit-content;
+    text-decoration: none;
+    color: var(--white); /* color: var(--black); */
+    font-size: 16px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5), box-shadow 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
+    width: fit-content;
     background: var(--main); /* background: var(--white); */
-	line-height: 20px;
-	outline: 1px solid var(--black);
-	display: inline-block;
+    line-height: 20px;
+    outline: 1px solid var(--black);
+    display: inline-block;
 }
 a.f:hover, a:focus-visible {
-	outline: 1px solid var(--black);
-	transform: translateX(3px) translateY(-3px);
-	box-shadow: -3px 3px 0 0 var(--gray), -3px 3px 0 1px var(--black);
+    outline: 1px solid var(--black);
+    transform: translateX(3px) translateY(-3px);
+    box-shadow: -3px 3px 0 0 var(--gray), -3px 3px 0 1px var(--black);
 }
 a.f:hover, a:focus-visible {
-	outline: 1px solid var(--black);
-	transform: translateX(3px) translateY(-3px);
-	box-shadow: -3px 3px 0 0 var(--gray), -3px 3px 0 1px var(--black);
+    outline: 1px solid var(--black);
+    transform: translateX(3px) translateY(-3px);
+    box-shadow: -3px 3px 0 0 var(--gray), -3px 3px 0 1px var(--black);
 }
 
 
