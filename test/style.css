@@ -13,6 +13,20 @@ body {
     align-items: center;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #222;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bebebe;
+    border-radius: 10px;
+}
+
 
 
 /* NAV */
@@ -156,4 +170,21 @@ body {
     border: 1px solid black;
     overflow: auto;
     resize: both;
+}
+
+
+
+/* Hacked Text Effect */
+
+#hacked {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 8vw, 10rem);
+    color: white;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+
+#hacked:hover {
+    background-color: white;
+    color: black;
 }
