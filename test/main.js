@@ -1,4 +1,4 @@
-// select list checker
+// Selected in select list
 function OptionList(elem) {
     // alert(document.getElementById("ez").value);
     alert(elem.value);
@@ -22,7 +22,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
 
-document.querySelector("#hacked").onmouseover = event => {
+document.querySelector("#hacked").onmouseover = (event) => {
     let iteration = 0;
 
     clearInterval(interval);
@@ -33,15 +33,15 @@ document.querySelector("#hacked").onmouseover = event => {
             .map((letter, index) => {
                 if(index < iteration) {
                     return event.target.dataset.value[index];
-                }
-            return letters[Math.floor(Math.random() * 26)]
-        })
-        .join("");
+                };
+                return letters[Math.floor(Math.random() * 26)];
+            })
+            .join("");
 
-    if(iteration >= event.target.dataset.value.length){
-        clearInterval(interval);
-    }
+        if(iteration >= event.target.dataset.value.length) {
+            clearInterval(interval);
+        };
 
-    iteration += 1 / 3;
+        iteration += 1 / 3;
     }, 30);
 };
