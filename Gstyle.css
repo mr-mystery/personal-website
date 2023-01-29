@@ -46,16 +46,15 @@ html {
 
 /* ::-webkit-scrollbar {
     width: 8px;
-    outline: 1px solid var(--black);
-  
+    outline: 1px solid var(--black); 
 }
 ::-webkit-scrollbar-track {
     background: var(--light-gray);
 }
 ::-webkit-scrollbar-thumb {
     background: var(--cyan-normal);
-      border-radius: 20px;
-      outline: 1px solid var(--black);
+    border-radius: 20px;
+    outline: 1px solid var(--black);
 } */
 
 a.f {
@@ -94,7 +93,7 @@ iframe {
     border-radius: 3px;
 }
 
-.flex{
+.flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +108,7 @@ iframe {
     background-attachment: fixed;
     background-position: center top;  
 }
-.parallax, .parallaxText{
+.parallax, .parallaxText {
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -118,7 +117,7 @@ iframe {
 .parallax {
     height: 300px;
 }
-.parallaxCity{
+.parallaxCity {
     background-image: url("https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg"); 
 }
 
