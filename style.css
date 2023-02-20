@@ -15,6 +15,7 @@
     width: 350px;
     margin: 1.5%;
     margin-left: 3%;
+    border-radius: 100%;
 }
 
 #me img:hover {
