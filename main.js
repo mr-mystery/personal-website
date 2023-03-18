@@ -11,7 +11,7 @@ function link(num) {
         iframeLink = 'https://mr-mystery.github.io/hosting-demo/';
     }
     else if (num === 'two') {
-        iframeLink = 'https://mr-mystery.github.io/Personal-Website/';
+        iframeLink = 'https://mr-mystery.github.io/personal-website/';
     }
     else if (num === 'three') {
         iframeLink = 'https://mr-mystery.github.io/P5-Game/';
