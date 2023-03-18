@@ -7,7 +7,7 @@ function OptionList(elem) {
 
 
 // // Asks if want to close tab after clicking once anywhere on screen
-// window.addEventListener('beforeunload', e => {
+// window.addEventListener('beforeunload', (e) => {
 //     e.preventDefault();
 //     e.returnValue = '';
 //     // return e;

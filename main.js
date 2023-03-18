@@ -4,7 +4,7 @@ AOS.init();
 
 const iframe = document.getElementById('iframe');
 const aTag = document.getElementById('iframeLink');
-function link(num){
+function link(num) {
     let iframeLink;
 
     if (num === 'one') {
@@ -27,7 +27,7 @@ function link(num){
     aTag.setAttribute('href', iframeLink);
 };
 
-function linkdrop(elem){
+function linkdrop(elem) {
     let ev = elem.value;
     let iframeLink;
 
@@ -51,7 +51,7 @@ function linkdrop(elem){
 
 
 
-function CheckBox(){
+function CheckBox() {
     AboutMe = {
         label1: "About Me:",
         L1: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, animi repellat! Saepe recusandae numquam eligendi praesentium dolorum cumque minima ipsum, obcaecati, a molestiae at, excepturi reiciendis quisquam. Modi, quisquam ipsam?",

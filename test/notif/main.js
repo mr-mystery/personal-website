@@ -1,5 +1,5 @@
 let NotifP;
-Notification.requestPermission().then( perm => { NotifP = perm });
+Notification.requestPermission().then((perm) => { NotifP = perm });
 
 
 
@@ -38,7 +38,7 @@ document.getElementById('note').addEventListener('click', () => {
             tag: "test",
         });
 
-        Notif.addEventListener("click", e => {
+        Notif.addEventListener("click", (e) => {
             alert("CLICK!");
         });
 
