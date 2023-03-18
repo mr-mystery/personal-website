@@ -24,7 +24,7 @@
 
 <body>
 
-    <div class="stuff">
+    <div class="nav">
         <a href="notif/index.html"><button><h4>Notification</h4></button></a>
         <a href="eye/index.html"><button><div><h4>Eyeballs that Follow Mouse Around</h4><h6>(Proximity Hover Effect)</h6></div></button></a>
         <a href="trail/index.html"><button><h4>Cursor Trailer V2</h4></button></a>
@@ -33,33 +33,35 @@
         <a href="clock/index.html"><button><h4>Clock</h4></button></a>
     </div>
 
-    <hr style="color: white;">
+    <hr>
 
     <div class="flex">
 
-        <div class="boxC row">
-            <div class="box" id="b1"><h1>Hi</h1></div>
-            <div class="box" id="b2"><h1>Hi</h1></div>
-            <div class="box" id="b3"><h1>Hi</h1></div>
-            <div class="box" id="b4"><h1>Hi</h1></div>
+        <div class="spinBoxCon row">
+            <div class="spinBox" id="b1"><h1>Hi</h1></div>
+            <div class="spinBox" id="b2"><h1>Hi</h1></div>
+            <div class="spinBox" id="b3"><h1>Hi</h1></div>
+            <div class="spinBox" id="b4"><h1>Hi</h1></div>
         </div>
 
     </div>
 
-    <hr style="color: white;">
+    <hr>
 
     <div class="flex">
 
-        <div style="margin-left: 55px; display: flex; flex-direction: column;">
+        <div>
 
             <details>
                 <summary>E</summary>
                 <h1>HI</h1>
             </details>
 
+            <hr>
+
             <div>
                 <label for="nerd">NERD: </label>
-                <input list="nerd" style="color: black;">
+                <input list="nerd">
                 <datalist id="nerd">
                     <option>N</option>
                     <option>E</option>
@@ -70,40 +72,42 @@
                 </datalist>
             </div>
 
+            <hr>
+
             <div>
                 <label for="ez">EZ: </label>
-                <select name="ez" id="ez" style="color: black;" onchange="OptionList(this)">
-                    <option value="" style="color: black;"></option>
-                    <option value="ez" style="color: black;">ez</option>
-                    <option value="Ez" style="color: black;">Ez</option>
-                    <option value="EZ" style="color: black;">EZ</option>
-                    <option value="EZZ" style="color: black;">EZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</option>
+                <select name="ez" id="ez" onchange="OptionList(this)">
+                    <option value=""></option>
+                    <option value="ez">ez</option>
+                    <option value="Ez">Ez</option>
+                    <option value="EZ">EZ</option>
+                    <option value="EZZ">EZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ</option>
                 </select>
             </div>
 
         </div>
 
-        <div class="resize" style="background-color: #36393f;"><h1>You can resize this box!</h1></div>
+        <div class="resize"><h1>You can resize this box!</h1></div>
 
     </div>
 
-    <hr style="color: white;">
+    <hr>
 
     <div class="flex">
 
         <h1 class="grad">Welcome</h1>
 
-        <div class="con">
-            <div class="box1" style="background-color: red;">1</div>
-            <div class="box2" style="background-color: indianred;">2</div>
-            <div class="box3" style="background-color: violet;">3</div>
-            <div class="box4" style="background-color: cyan;">4</div>
-            <div class="box5" style="background-color: darkcyan;">5</div>
+        <div class="snap">
+            <div class="snapBox">1</div>
+            <div class="snapBox">2</div>
+            <div class="snapBox">3</div>
+            <div class="snapBox">4</div>
+            <div class="snapBox">5</div>
         </div>
 
     </div>
 
-    <hr style="color: white;">
+    <hr>
 
     <div class="flex">
         <!-- Code Pen: https://codepen.io/Hyperplexed/pen/rNrJgrd -->
