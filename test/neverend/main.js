@@ -1,8 +1,8 @@
 const observer = new IntersectionObserver(
     entries => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
             entry.target.classList.toggle("show", entry.isIntersecting);
-            // if (entry.isIntersecting) observer.unobserve(entry.target); //Only play animation once
+            // if (entry.isIntersecting) {observer.unobserve(entry.target)}; //Only play animation once
         });
         // console.log(entries);
     },
@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(
 );
 
 const cards = document.querySelectorAll(".card");
-cards.forEach(card => {
+cards.forEach((card) => {
     observer.observe(card);
 });
 
@@ -24,13 +24,13 @@ cards.forEach(card => {
 const lastCardObserver = new IntersectionObserver(
     entries => {
         const lastCard = entries[0];
-        if (!lastCard.isIntersecting) return;
+        if (!lastCard.isIntersecting) {return};
         loadNewCards();
         lastCardObserver.unobserve(lastCard.target);
         lastCardObserver.observe(document.querySelector(".card:last-child"));
     },
     {
-        rootMargin: "100px",
+        rootMargin: "125px",
         // Changes root element's bounding box
         // 50px makes the code run 50px before entering screen 
         // -50px makes the code run 50px after entering screen 

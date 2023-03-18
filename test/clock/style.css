@@ -18,8 +18,8 @@ body {
     width: 500px;
     height: 500px;
     background-color: #ffffffcc;
-    border-radius: 50%;
     border: 2px solid black;
+    border-radius: 50%;
     position: relative;
 }
 

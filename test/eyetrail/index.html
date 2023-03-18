@@ -89,7 +89,7 @@
         let trailerL = document.getElementById("trailerL");
         let trailerR = document.getElementById("trailerR");
 
-        window.onmousemove = e => {
+        window.onmousemove = (e) => {
             let x = e.clientX;
             let y = e.clientY;
 
@@ -104,7 +104,7 @@
                 // easing: "linear"
             });
 
-            eyes.forEach(eye => {
+            eyes.forEach((eye) => {
                 let rekt = eye.getBoundingClientRect();
                 let anchorX = rekt.left + rekt.width/2;
                 let anchorY = rekt.top + rekt.height/2;

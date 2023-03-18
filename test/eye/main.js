@@ -15,7 +15,7 @@ document.addEventListener("mousemove", (e) => {
 
     // angleDeg = angle(mouseX, mouseY, anchorX, anchorY); //Comment this for independent eye follow
 
-    eyes.forEach(eye => {
+    eyes.forEach((eye) => {
         let rekt = eye.getBoundingClientRect(); //Uncomment this for independent eye follow
         let anchorX = rekt.left + rekt.width/2; //Uncomment this for independent eye follow
         let anchorY = rekt.top + rekt.height/2; //Uncomment this for independent eye follow

@@ -13,11 +13,10 @@ function Alert() {
 
 let x = false;
 function pain() {
-    if(x === false) {
+    if (x === false) {
         x = true;
         y = 'Toggle Pain (Currently On)';
-    }
-    else {
+    } else {
         x = false;
         y = 'Toggle Pain (Currently Off)';
     };
@@ -66,10 +65,9 @@ document.addEventListener("visibilitychange", () => {
 
         }, 1000);
 
-    }
-    else {
-        if (interval) clearInterval(interval);
-        if (Notif2) Notif2.close();
+    } else {
+        if (interval) {clearInterval(interval)};
+        if (Notif2) {Notif2.close()};
     };
 
 });
