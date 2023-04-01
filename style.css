@@ -1,20 +1,18 @@
-/* ABOUT ME STUFF (HOME) */
-
-#me {
+#me, #edu, #pj {
     display: flex;
+    justify-content: center;
     align-items: center;
     border: 1px solid black;
-    margin-top: 1vw;
+    margin-top: 10px;
+    padding: 1vw;
 }
 
-#meText {
-    margin-right: 4%;
-}
+
+
+/* ABOUT ME STUFF (HOME) */
 
 #me img {
-    width: 350px;
-    margin: 1.5%;
-    margin-left: 3%;
+    width: 325px;
     border-radius: 100%;
 }
 
@@ -59,47 +57,21 @@
 
 /* EDU STUFF (HOME) */
 
-#edu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    margin-top: 10px;
-}
-
-#eduText {
-    margin-left: 4%;
-}
-
 #edu img {
-    border-radius: 75px;
-    width: 350px;
-    margin: 10px 5% 10px 1%;
-    /* margin: top right bottom left */ 
+    width: 325px;
+    border-radius: 70px;
 }
 
 
 
 /* PJ STUFF (HOME) */
 
-#pj {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    margin-top: 10px;
-}
-
-#PJtext {
-    margin: 2.5%;
-}
-
 #pj button {
     font-family: Helvetica;
-    font-size: 20px;
     padding: 10px;
     background-color: var(--main);
     color: white;
+    font-size: 20px;
     border-radius: 15px;
 }
 
@@ -109,14 +81,11 @@
 }
 
 iframe {
-    width: 80vw;
-    max-width: 950px;
-    min-height: 100px;
-    height: 70vh;
-    max-height: 600px;
+    width: clamp(1px, 80vw, 950px);
+    height: clamp(100px, 70vh, 600px);
+    background-color: var(--iframeT);
     border: 1px solid black;
     border-radius: 15px;
-    background-color: var(--iframeT);
 }
 
 
@@ -132,8 +101,7 @@ iframe {
 }
 
 #footer img {
-    height: 10vh;
-    max-height: 150px;
+    height: clamp(1px, 10vh, 150px);
 }
 
 
