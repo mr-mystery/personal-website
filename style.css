@@ -14,6 +14,7 @@
 #me img {
     width: 325px;
     border-radius: 100%;
+    margin-right: clamp(10px, 1.5vw, 50px);
 }
 
 #me img:hover {
@@ -60,6 +61,7 @@
 #edu img {
     width: 325px;
     border-radius: 70px;
+    margin-left: clamp(10px, 1.5vw, 50px);
 }
 
 
