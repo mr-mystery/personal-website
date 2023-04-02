@@ -103,19 +103,19 @@ body {
     border-radius: 50%;
 }
 
-.clock .hand.second {
+.clock .hand .second {
     width: 3px;
     height: 45%;
     background-color: red;
 }
 
-.clock .hand.minute {
+.clock .hand .minute {
     width: 7px;
     height: 40%;
     background-color: black;
 }
 
-.clock .hand.hour {
+.clock .hand .hour {
     width: 10px;
     height: 35%;
     background-color: black;

@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Saket's Website | Trailer V2</title>
     <link rel="shortcut icon" href="../../images/blue-thumbs-up-icon.png"/>
-    
+
     <script src="main.js" defer></script>
 
     <style>
@@ -27,15 +27,25 @@
             width: 20px;
             background-color: white;
             border-radius: 20px;
-    
+
             position: fixed;
             left: 0px;
             top: 0px;
             z-index: 10000;
-    
+
             pointer-events: none;
             opacity: 0;
             transition: opacity 500ms ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+        nav .button-con {
+            display: flex;
+            gap: 5px;
         }
 
         button{
@@ -56,16 +66,16 @@
 
 <body>
 
-    <div style="display: flex; justify-content: space-between; padding: 5px;">
+    <nav>
 
-        <div style="display: flex; gap: 5px;">
+        <div class="button-con">
             <button id="AddT">Add</button>
             <button id="RemoveT">Remove</button>
         </div>
 
         <a href="trailerV1/index.html"><button>Trailer V1</button></a>
 
-    </div>
+    </nav>
 
     <div id="trailer" class="trailer"></div>
 

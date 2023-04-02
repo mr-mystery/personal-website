@@ -1,10 +1,12 @@
-#me, #edu, #pj {
+.sec-home {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
     margin-top: 10px;
     padding: 1vw;
+    background-color: var(--tGray);
+    color: white;
 }
 
 
@@ -98,12 +100,15 @@ iframe {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     margin-top: 10px;
+    background-color: var(--tGray);
+    border: 1px solid black;
+    color: white;
 }
 
 #footer img {
     height: clamp(1px, 10vh, 150px);
+    border-radius: 5.5px;
 }
 
 
@@ -111,26 +116,21 @@ iframe {
 /* PHONE */
 
 @media(max-width: 530px) {
-    .sec {
+    .sec-home {
         display: flex;
         flex-direction: column;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column; 
     }
 
     #nav {
         display: flex;
         flex-direction: column;
     }
-
     #nav button {
         font-size: 55%;
     }
-}
-
-
-
-/* OTHER */
-
-.sec {
-    background-color: var(--tGray);
-    color: white;
 }
