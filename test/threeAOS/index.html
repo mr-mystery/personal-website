@@ -100,6 +100,7 @@
             }
         }
     </script>
+
     <script type="module">
 
         import * as THREE from 'three';
@@ -143,14 +144,15 @@
             */
         function lerp(x, y, a) {
             return (1 - a) * x + a * y;
-        }
+        };
 
         // Used to fit the lerps to start and end at specific scrolling percentages
         function scalePercent(start, end) {
             return (scrollPercent - start) / (end - start);
         };
 
-        const animationScripts = [];
+        // const animationScripts = [];
+        let animationScripts = [];
 
         //add an animation that flashes the cube through 100 percent of scroll
         animationScripts.push({
@@ -207,7 +209,6 @@
             start: 80,
             end: 101,
             func: () => {
-                //auto rotate
                 cube.rotation.x += 0.01;
                 cube.rotation.y += 0.01;
             },
