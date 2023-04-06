@@ -1,0 +1,9 @@
+Wireframe: https://wireframe.cc/1UG08y
+
+AOS:
+    https://michalsnik.github.io/aos/
+    https://www.sitepoint.com/cool-scroll-animations-made-easy-aos-library/
+
+BounceCSS:
+    https://bouncecss.bookie0.repl.co/
+    https://bouncecss.bookie0.repl.co/bounce.css
