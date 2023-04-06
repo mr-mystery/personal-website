@@ -91,9 +91,9 @@ iframe {
     justify-content: space-around;
     align-items: center;
     margin-top: 10px;
+    color: white;
     background-color: var(--tGray);
     border: 1px solid black;
-    color: white;
 }
 
 #footer img {
