@@ -70,18 +70,8 @@
 
 /* PJ STUFF (HOME) */
 
-#pj button {
-    font-family: Helvetica;
-    padding: 10px;
-    background-color: var(--main);
-    color: white;
-    font-size: 20px;
-    border-radius: 15px;
-}
-
-#pj button:hover {
-    background-color: gray;
-    opacity: 0.5;
+#PJtext {
+    margin-right: 10px;
 }
 
 iframe {

@@ -21,6 +21,9 @@ function link(num) {
     }
     else if (num === 'five') {
         iframeLink = 'https://mr-mystery.github.io/Random-Api/';
+    }
+    else if (num === 'six') {
+        iframeLink = 'https://mr-mystery.github.io/test/';
     };
     
     iframe.setAttribute('src', iframeLink);

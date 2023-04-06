@@ -150,3 +150,20 @@ iframe {
     background-color: gray;
     opacity: 0.5;
 }
+
+
+
+/* Project */
+
+#PJtext .B-holder button {
+    font-family: Helvetica;
+    padding: 10px;
+    background-color: var(--main);
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+}
+#PJtext .B-holder button:hover {
+    background-color: gray;
+    opacity: 0.5;
+}
