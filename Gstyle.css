@@ -118,7 +118,7 @@ iframe {
     height: 300px;
 }
 .parallaxCity {
-    background-image: url("images/City.jpeg"); 
+    background-image: url("./images/City.jpeg"); 
 }
 
 
