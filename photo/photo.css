@@ -10,6 +10,7 @@
     margin: 1vw;
     border: 1px solid #000;
     width: 850px;
+    max-width: 98vw;
     padding: 10px;
     display: flex;
     flex-direction: column;
