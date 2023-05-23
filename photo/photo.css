@@ -1,26 +1,23 @@
 /* GALLERY STUFF */
 
 .pictures {
+    margin: clamp(5px, 1vh, 10px) auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1vh;
 }
 
 .gallery {
-    margin: 1vw;
+    width: clamp(10px, 96vw, 400px);
+    padding: clamp(1px, 1vw, 10px);
     border: 1px solid #000;
-    width: 850px;
-    max-width: 98vw;
-    padding: 10px;
+    background-color: var(--tGray);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--tGray);
 }
-
-/* .gallery:hover {
-    border: 1px solid #141414;
-} */
 
 .gallery img {
     width: 90%;
