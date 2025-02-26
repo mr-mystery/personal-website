@@ -14,13 +14,13 @@ function link(num) {
         iframeLink = 'https://mr-mystery.github.io/personal-website/';
     }
     else if (num === 'three') {
-        iframeLink = 'https://mr-mystery.github.io/P5-Game/';
+        iframeLink = 'https://mr-mystery.github.io/p5-game/';
     }
     else if (num === 'four') {
         iframeLink = 'https://mr-mystery.github.io/firebase-messages/';
     }
     else if (num === 'five') {
-        iframeLink = 'https://mr-mystery.github.io/Random-Api/';
+        iframeLink = 'https://mr-mystery.github.io/random-api/';
     }
     else if (num === 'six') {
         iframeLink = 'https://mr-mystery.github.io/test/';
